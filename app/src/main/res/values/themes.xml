@@ -6,7 +6,7 @@
     <item name="colorOnPrimary">@color/white</item>
     <item name="colorSecondary">@color/brand_orange</item>
     <item name="colorOnSecondary">@color/brand_navy</item>
-    <item name="android:fontFamily">sans</item>
+    <item name="android:fontFamily">sans-serif</item>
     <item name="android:windowLightStatusBar">true</item>
     <item name="android:statusBarColor">@color/canvas</item>
     <item name="android:navigationBarColor">@color/canvas</item>
@@ -16,7 +16,7 @@
   </style>
   <style name="ShopTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
     <item name="boxBackgroundColor">@color/field_bg</item>
-    <item name="boxStrokeColor">@color/brand_navy</item>
+    <item name="boxStrokeColor">@color/input_stroke</item>
     <item name="boxStrokeWidth">1dp</item>
     <item name="boxStrokeWidthFocused">2dp</item>
     <item name="boxCornerRadiusTopStart">18dp</item>

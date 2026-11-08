@@ -27,4 +27,18 @@
  <string name="send_reset">Send reset link</string>
  <string name="config_missing">Connect your own Firebase project to enable sign-in.</string>
  <string name="password_helper">Use at least 6 characters</string>
+ <string name="splash_kicker">GOOD THINGS START HERE</string>
+ <string name="brand_chip">MADE FOR YOU</string>
+ <string name="hero_kicker">EVERYDAY EDIT</string>
+ <string name="hero_headline">Little joys.\nBig smiles.</string>
+ <string name="sign_up_link">Sign up</string>
+ <string name="back_to_login">Back to log in</string>
+ <string name="signup_kicker">LET’S GET STARTED</string>
+ <string name="signup_headline">Create your\naccount.</string>
+ <string name="details_label">YOUR DETAILS</string>
+ <string name="welcome_kicker">WELCOME TO YOUR SPACE</string>
+ <string name="hello_fallback">Hi, there!</string>
+ <string name="happy_here">We\'re happy you\'re here.</string>
+ <string name="coming_soon_chip">COMING SOON</string>
+ <string name="coming_soon_headline">Something good\nis on its way.</string>
 </resources>

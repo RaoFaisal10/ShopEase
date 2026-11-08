@@ -7,38 +7,34 @@
   <ImageView android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_shop_logo"
     android:contentDescription="@string/app_name"/>
   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"
-    android:text="ShopEase" android:textColor="@color/ink" android:fontFamily="sans-serif-black"
+    android:text="@string/app_name" android:textColor="@color/ink" android:fontFamily="sans-serif-black"
     android:textSize="23sp"/>
-  <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
-  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="11dp"
-    android:background="@drawable/bg_border_pill" android:text="01 / 02" android:letterSpacing="0.1"
-    android:fontFamily="sans-serif-medium" android:textSize="11sp" android:textColor="@color/ink"/>
  </LinearLayout>
  <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
    android:fillViewport="true">
   <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
     android:orientation="vertical" android:paddingLeft="26dp" android:paddingRight="26dp"
-    android:paddingTop="44dp" android:paddingBottom="20dp">
+    android:paddingTop="32dp" android:paddingBottom="20dp">
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-       android:text="WELCOME TO YOUR SPACE" android:textColor="#B07732"
+       android:text="@string/welcome_kicker" android:textColor="#B07732"
        android:fontFamily="sans-serif-bold" android:letterSpacing="0.13" android:textSize="10sp"/>
     <TextView android:id="@+id/tvHello" android:layout_width="match_parent" android:layout_height="wrap_content"
-       android:layout_marginTop="8dp" android:text="Hi, there!" android:textColor="@color/ink"
-       android:fontFamily="sans-serif-black" android:textSize="39sp" android:letterSpacing="-0.04"/>
+       android:layout_marginTop="8dp" android:text="@string/hello_fallback" android:textColor="@color/ink"
+       android:fontFamily="sans-serif-black" android:textSize="36sp" android:letterSpacing="-0.04"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-       android:layout_marginTop="5dp" android:text="We're happy you're here." android:textColor="@color/muted" android:textSize="14sp"/>
-    <FrameLayout android:layout_width="match_parent" android:layout_height="310dp" android:layout_marginTop="34dp"
+       android:layout_marginTop="5dp" android:text="@string/happy_here" android:textColor="@color/muted" android:textSize="14sp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="270dp" android:layout_marginTop="24dp"
       android:background="@drawable/bg_cream_card" android:clipChildren="false">
-      <pk.edu.nfciet.shopease.ShopArtworkView android:tag="gift" android:layout_width="285dp"
-        android:layout_height="239dp" android:layout_gravity="center"/>
+      <pk.edu.nfciet.shopease.ShopArtworkView android:tag="gift" android:layout_width="260dp"
+        android:layout_height="218dp" android:layout_gravity="center"/>
       <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
        android:layout_gravity="top|left" android:layout_margin="20dp" android:paddingTop="8dp" android:paddingBottom="8dp"
        android:paddingLeft="13dp" android:paddingRight="13dp"
-       android:background="@drawable/bg_border_pill" android:text="COMING SOON" android:fontFamily="sans-serif-bold"
+       android:background="@drawable/bg_border_pill" android:text="@string/coming_soon_chip" android:fontFamily="sans-serif-bold"
        android:textSize="10sp" android:letterSpacing="0.12" android:textColor="@color/ink"/>
     </FrameLayout>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-      android:layout_marginTop="29dp" android:text="Something good\nis on its way."
+      android:layout_marginTop="19dp" android:text="@string/coming_soon_headline"
       android:textColor="@color/ink" android:fontFamily="sans-serif-black"
       android:textSize="29sp" android:letterSpacing="-0.035"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"

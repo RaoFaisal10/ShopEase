@@ -18,12 +18,12 @@
  <string name="no_account">New to ShopEase?</string>
  <string name="have_account">Already have an account?</string>
  <string name="create_your_account">Your better shopping starts here.</string>
- <string name="create_subtitle">A few details and you're on your way.</string>
+ <string name="create_subtitle">A few details and you\'re on your way.</string>
  <string name="products_soon">Products coming soon</string>
- <string name="products_description">We're getting everything ready for you. The good stuff is worth the wait.</string>
+ <string name="products_description">We\'re getting everything ready for you. The good stuff is worth the wait.</string>
  <string name="log_out">Log out</string>
  <string name="reset_title">Reset your password</string>
- <string name="reset_body">We'll email you a secure link to get you back in.</string>
+ <string name="reset_body">We\'ll email you a secure link to get you back in.</string>
  <string name="send_reset">Send reset link</string>
  <string name="config_missing">Connect your own Firebase project to enable sign-in.</string>
  <string name="password_helper">Use at least 6 characters</string>

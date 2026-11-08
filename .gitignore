@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+**/build/
+local.properties
+*.iml
+.DS_Store
+captures/
+# Real Firebase configuration belongs to the student's own Firebase project
+app/google-services.json

@@ -1,0 +1,30 @@
+ShopEase — Android build and Firebase completion checklist
+
+The source implements Firebase Email/Password authentication and Cloud Firestore,
+but no Firebase project is connected until you supply the genuine Android app config.
+
+1) In YOUR Firebase project, register Android package pk.edu.nfciet.shopease.
+2) Download google-services.json from Project settings > Your apps and copy it
+   to ShopEase/app/google-services.json (NOT the project root).
+3) In Firebase Authentication, enable the Email/Password provider.
+4) Create the Cloud Firestore database and publish the security rules in
+   firebase.rules (users/{uid} may be read/written by its signed-in user).
+5) Android Studio: open the ShopEase folder, use JDK 17, allow Gradle sync,
+   install Android SDK 36, build debug APK and run on API 26+ emulator/device.
+6) Test: first launch splash -> Login, invalid input, sign up, check Firebase
+   Authentication user and Firestore users/{uid}, restart signed-in, logout,
+   sign in again, password-reset email and negative authentication case.
+
+Optional GitHub Actions CI:
+- A workflow is provided in .github/workflows/android-verify.yml.
+- It builds the APK and checks that an Android emulator goes from splash
+  to login. It has NOT been run or verified on GitHub Actions in this session.
+- To enable Firebase during CI, set repository secret named
+  SHOPEASE_GOOGLE_SERVICES_JSON_B64 to the base64-encoded contents of the
+  student's genuine google-services.json file. Do not commit that file.
+- Even with config present, CI smoke testing is not a live user signup test.
+
+IMPORTANT: No claim of successful native Android compilation, emulator
+execution or live Firebase authentication is made until those tests run.
+The local environment used here lacks the Android SDK and emulator, and
+could not download Gradle. The browser preview is a visual simulation only.

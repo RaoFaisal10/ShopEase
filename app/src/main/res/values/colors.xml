@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="brand_navy">#14223D</color>
+ <color name="brand_orange">#F4AB3E</color>
+ <color name="ink">#19253C</color>
+ <color name="muted">#778093</color>
+ <color name="canvas">#FAF8F4</color>
+ <color name="cream">#FEF1D9</color>
+ <color name="field_bg">#FFFFFF</color>
+ <color name="line">#E8E6E1</color>
+ <color name="coral">#F07C60</color>
+ <color name="white">#FFFFFF</color>
+</resources>

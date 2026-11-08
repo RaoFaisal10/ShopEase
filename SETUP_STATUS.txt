@@ -1,0 +1,3 @@
+Step 1: Source project and Firebase libraries added.
+A genuine google-services.json must come from the student's own Firebase project.
+Firestore security rules are in firebase.rules. Do not fabricate credentials.

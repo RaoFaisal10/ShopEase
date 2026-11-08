@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/canvas">
- <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="Products coming soon" android:textSize="28sp" android:textColor="@color/brand_navy"/>
-</FrameLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+ android:background="@drawable/bg_soft_page" android:paddingTop="18dp">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  android:orientation="horizontal" android:gravity="center_vertical" android:paddingLeft="24dp" android:paddingRight="24dp">
+  <ImageView android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_shop_logo"
+    android:contentDescription="@string/app_name"/>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"
+    android:text="ShopEase" android:textColor="@color/ink" android:fontFamily="sans-serif-black"
+    android:textSize="23sp"/>
+  <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="11dp"
+    android:background="@drawable/bg_border_pill" android:text="01 / 02" android:letterSpacing="0.1"
+    android:fontFamily="sans-serif-medium" android:textSize="11sp" android:textColor="@color/ink"/>
+ </LinearLayout>
+ <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+   android:fillViewport="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingLeft="26dp" android:paddingRight="26dp"
+    android:paddingTop="44dp" android:paddingBottom="20dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:text="WELCOME TO YOUR SPACE" android:textColor="#B07732"
+       android:fontFamily="sans-serif-bold" android:letterSpacing="0.13" android:textSize="10sp"/>
+    <TextView android:id="@+id/tvHello" android:layout_width="match_parent" android:layout_height="wrap_content"
+       android:layout_marginTop="8dp" android:text="Hi, there!" android:textColor="@color/ink"
+       android:fontFamily="sans-serif-black" android:textSize="39sp" android:letterSpacing="-0.04"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+       android:layout_marginTop="5dp" android:text="We're happy you're here." android:textColor="@color/muted" android:textSize="14sp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="310dp" android:layout_marginTop="34dp"
+      android:background="@drawable/bg_cream_card" android:clipChildren="false">
+      <pk.edu.nfciet.shopease.ShopArtworkView android:tag="gift" android:layout_width="285dp"
+        android:layout_height="239dp" android:layout_gravity="center"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:layout_gravity="top|left" android:layout_margin="20dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+       android:paddingLeft="13dp" android:paddingRight="13dp"
+       android:background="@drawable/bg_border_pill" android:text="COMING SOON" android:fontFamily="sans-serif-bold"
+       android:textSize="10sp" android:letterSpacing="0.12" android:textColor="@color/ink"/>
+    </FrameLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="29dp" android:text="Something good\nis on its way."
+      android:textColor="@color/ink" android:fontFamily="sans-serif-black"
+      android:textSize="29sp" android:letterSpacing="-0.035"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="12dp" android:text="@string/products_soon" android:textColor="#B8782F"
+      android:fontFamily="sans-serif-bold" android:textSize="15sp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="5dp" android:text="@string/products_description"
+      android:textColor="@color/muted" android:textSize="13sp" android:lineSpacingExtra="3dp"/>
+  </LinearLayout>
+ </ScrollView>
+ <com.google.android.material.button.MaterialButton android:id="@+id/btnLogout"
+  android:layout_width="match_parent" android:layout_height="56dp"
+  android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="18dp"
+  android:text="@string/log_out" android:textAllCaps="false" android:textSize="15sp"
+  android:textColor="@color/ink" android:fontFamily="sans-serif-bold"
+  app:cornerRadius="18dp" app:strokeWidth="1dp" app:strokeColor="@color/line"
+  app:backgroundTint="@color/white"/>
+</LinearLayout>

@@ -5,5 +5,7 @@ local.properties
 *.iml
 .DS_Store
 captures/
-# Real Firebase configuration belongs to the student's own Firebase project
-app/google-services.json
+# Firebase Android client configuration is committed for this assignment.
+# NEVER commit Firebase Admin SDK service-account JSON, passwords, or private keys.
+*-firebase-adminsdk-*.json
+service-account*.json

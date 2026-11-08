@@ -1,30 +1,30 @@
-SHOP EASE - Assignment 1 / Java + XML / Android Studio
+SHOP EASE — Assignment 1 | Android Studio Java + XML
 
-Open this folder in Android Studio. The real Firebase configuration is deliberately not fabricated.
-For an actual account sign-in and profile saving, create your own Firebase Android project
-with package pk.edu.nfciet.shopease, activate Email/Password Authentication, create Firestore,
-publish firebase.rules, then save google-services.json to app/google-services.json.
+Open this repository's root folder in Android Studio and run the app on API 26+.
+App ID: pk.edu.nfciet.shopease
+The Android client Firebase configuration is at app/google-services.json.
 
-The project can build without that file (login remains disabled until configured).
+Firebase project (Android client): shop-ease-228e9.
+The Android Google Services Gradle plugin selects the client registered as
+pk.edu.nfciet.shopease; another registered Android client may be in the same JSON.
+Enable Email/Password in Firebase Authentication and publish firebase.rules
+for the Cloud Firestore users/{uid} collection to enable registration/profile storage.
+These Firebase Console settings are NOT enabled simply by committing the JSON.
 
-Build settings: AGP 8.13.2, Gradle 8.13, compile SDK 36, JDK 17, minimum API 26.
+The main branch preserves the five required screen-by-screen assignment commits
+from assignment-1. PR #1 was merged without squashing:
+https://github.com/RaoFaisal10/ShopEase/pull/1
 
-The browser-only preview is at preview/index.html and is NOT connected to Firebase.
-It simulates screen navigation and validation for visual review only.
+Do not commit user passwords, Firebase Admin service-account credentials or private keys.
+The Android client configuration contains identifiers and an API key; the API key is
+not an administrator secret. Restrict Google Cloud API usage appropriately and
+enforce Firebase Authentication, security rules, and billing quotas.
 
-Assignment requires a private GitHub repository with instructor collaborator abdullahzafar-336,
-branch assignment-1, five exact commits, pull request and APK v1.0 release.
-This ZIP contains a local .git repository with all five milestone commits on assignment-1;
-no repository was created online and no teacher invitation was sent.
+Gradle 8.13 / Android Gradle Plugin 8.13.2 / Java 17 / compile SDK 36.
+Your local Android Studio ZIP may contain newer IDE-managed Gradle settings.
+The repository retains the version successfully compiled on GitHub Actions.
+The special gradle-wrapper.jar is a project-local bootstrap for Gradle 8.13.
 
-Do not add your real user passwords or Firebase service-account keys to the repository.
-
-The included gradle-wrapper.jar is a small, project-local Java 17 bootstrap (source at
-  gradle/wrapper/bootstrap-src/)
-that downloads the official Gradle 8.13 ZIP on first run. It is not Gradle's original
-wrapper JAR. After opening in Android Studio, you may generate the standard Gradle wrapper.
-
-The actual Android build and Firebase auth cannot be tested here: the generation sandbox
-has no Android SDK, no access to a build-time Maven/Gradle dependency cache, and no
-student-specific Firebase google-services.json. XML validation and browser preview
-interaction tests have been run. Please do a Gradle sync/build on a machine with the SDK.
+Generated directories (.gradle, .idea, build), local.properties, .git history
+and downloaded SDKs are intentionally not uploaded.
+The browser preview, when present, simulates UI and is not live Firebase.

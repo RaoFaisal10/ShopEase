@@ -1,0 +1,51 @@
+{
+  "passed": 9,
+  "total": 9,
+  "checks": [
+    {
+      "check": "XML parsing",
+      "passed": true,
+      "detail": "23 files"
+    },
+    {
+      "check": "Android resource references",
+      "passed": true,
+      "detail": "0 missing: []"
+    },
+    {
+      "check": "Java R.* resource references",
+      "passed": true,
+      "detail": "0 missing []"
+    },
+    {
+      "check": "Java syntax parse",
+      "passed": true,
+      "detail": "Parsed Java files: 6"
+    },
+    {
+      "check": "Splash only launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Internet permission",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Firebase auth + Firestore implemented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Firebase session splash routing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Required package name",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

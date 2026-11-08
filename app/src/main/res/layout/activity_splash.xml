@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_splash">
+  <View android:layout_width="460dp" android:layout_height="460dp" android:layout_gravity="top|right"
+      android:layout_marginTop="-170dp" android:layout_marginRight="-215dp" android:background="@drawable/bg_splash_glow" />
+  <View android:layout_width="360dp" android:layout_height="360dp" android:layout_gravity="bottom|left"
+      android:layout_marginBottom="-220dp" android:layout_marginLeft="-180dp" android:background="@drawable/bg_splash_glow" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+      android:gravity="center" android:orientation="vertical" android:padding="24dp">
+      <FrameLayout android:layout_width="160dp" android:layout_height="160dp">
+         <View android:layout_width="128dp" android:layout_height="128dp" android:layout_gravity="center"
+               android:background="@drawable/bg_splash_logo" android:rotation="-8"/>
+         <ImageView android:layout_width="126dp" android:layout_height="126dp" android:layout_gravity="center"
+               android:src="@drawable/ic_shop_logo" android:contentDescription="@string/app_name"/>
+      </FrameLayout>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginTop="24dp" android:text="ShopEase" android:textColor="@color/white"
+          android:textSize="43sp" android:letterSpacing="-0.035" android:fontFamily="sans-serif-black"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginTop="8dp" android:text="@string/tagline" android:textColor="#CACED7"
+          android:textSize="14sp" android:letterSpacing="0.045"/>
+  </LinearLayout>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+      android:layout_gravity="bottom|center_horizontal" android:layout_marginBottom="48dp"
+      android:text="GOOD THINGS START HERE" android:textColor="#98A8C4"
+      android:textSize="10sp" android:letterSpacing="0.24" android:fontFamily="sans-serif-medium"/>
+</FrameLayout>

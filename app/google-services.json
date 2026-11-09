@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "9858849030",
+    "project_id": "shop-ease-228e9",
+    "storage_bucket": "shop-ease-228e9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9858849030:android:d08cf6aaaed92555b6e687",
+        "android_client_info": {
+          "package_name": "com.nfc.ShopEase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiDCdlhWpyJK_Bj_IHGPVmpS62eZVSXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9858849030:android:52bdb2ccd73889b6b6e687",
+        "android_client_info": {
+          "package_name": "pk.edu.nfciet.shopease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiDCdlhWpyJK_Bj_IHGPVmpS62eZVSXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
